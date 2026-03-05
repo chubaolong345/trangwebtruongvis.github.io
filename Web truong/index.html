@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>TRƯỜNG PHỔ THÔNG QUỐC TẾ VIỆT NAM</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:Arial;margin:0;background:#eef2f7}
+header{background:#6a1bb1;color:white}
+.topbar{display:flex;align-items:center;gap:15px;padding:12px 40px}
+.logo{width:45px;height:45px;border-radius:50%;object-fit:cover}
+.school-name{font-size:20px;font-weight:bold}
+nav{background:#8e44d3;text-align:center;padding:10px}
+nav a{color:white;margin:0 14px;text-decoration:none;font-weight:bold}
+nav a:hover{opacity:0.8}
+
+/* slideshow banner */
+.banner{position:relative;height:240px;overflow:hidden}
+.banner-overlay{position:absolute;inset:0;background:linear-gradient(rgba(106,27,177,0.6),rgba(106,27,177,0.6));z-index:1}
+.banner-content{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:white;text-align:center;z-index:2}
+.banner-content h1{margin:0;font-size:34px}
+.banner-content p{margin-top:8px;font-size:16px;opacity:0.95}
+.slide{position:absolute;width:100%;height:100%;background-size:cover;background-position:center;opacity:0;transition:opacity 1s}
+.slide.active{opacity:1}
+.banner-title{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:white;font-size:32px;background:rgba(0,0,0,0.5);padding:12px 25px;border-radius:8px}
+
+.container{max-width:1100px;margin:auto;padding:40px 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.1);transition:0.3s}
+.card:hover{transform:translateY(-5px)}
+.card img{width:100%;height:130px;object-fit:cover}
+.card-content{padding:18px}
+footer{background:#6a1bb1;color:white;text-align:center;padding:18px;margin-top:40px}
+</style>
+</head>
+<body>
+
+<header>
+<div class="topbar">
+<img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQic_4wfefPpUPMPm9Fbcvr_k8s-PheCRiSgA&s">
+<div class="school-name">TRƯỜNG PHỔ THÔNG QUỐC TẾ VIỆT NAM</div>
+</div>
+</header>
+
+<nav>
+<a href="index.html">Trang chủ</a>
+<a href="about.html">Giới thiệu</a>
+<a href="news.html">Tin tức</a>
+<a href="teachers.html">Giáo viên</a>
+<a href="infrastructure.html">Cơ sở hạ tầng</a>
+<a href="gallery.html">Thư viện ảnh</a>
+<a href="events.html">Sự kiện</a>
+<a href="contact.html">Liên hệ</a>
+</nav>
+
+<div class="banner">
+<div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1')"></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b')"></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1523240795612-9a054b0db644')"></div>
+
+<div class="banner-overlay"></div>
+<div class="banner-content">
+<h1>TRƯỜNG PHỔ THÔNG QUỐC TẾ VIỆT NAM</h1>
+<p>Nơi nuôi dưỡng tri thức và phát triển tương lai</p>
+</div>
+</div>
+
+<div class="container">
+<h2>Tin nổi bật</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b">
+<div class="card-content">
+<h3>Thành tích học tập</h3>
+<p>Học sinh đạt nhiều giải thưởng trong các kỳ thi quốc gia.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644">
+<div class="card-content">
+<h3>Hoạt động ngoại khóa</h3>
+<p>Các câu lạc bộ giúp học sinh phát triển kỹ năng.</p>
+</div>
+</div>
+</html>
